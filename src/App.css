@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+/* css variable start  */
+:root{
+  --bg-color: #150623;
+  --bg-color-secondary: #00002C;
+  --primary-text: #fff;
+  --primary:#F74575;
+  --white:#fff;
+  --secondary-font:#BCB7B7;
+  --primary-font:'Josefin Sans', sans-serif;
+  --logo:'Borel', cursive;
+}
+/* css variable end  */
+
+/* basic setting start  */
+.container{
+  max-width: 1140px!important;
+  margin: auto!important;
+}
+.secondary{
+  background: var(--bg-color-secondary);
+}
+/* basic setting end  */
+*{
+  font-family: 'Josefin Sans', sans-serif;
+}
+/* logo font start  */
+.logo-font{
+  font-family: 'Borel', cursive;
+} 
+/* logo font end  */
+
+body{
+  background-color: var(--bg-color);
+  color: var(--white);
+}
+
+/* separator start  */
+.separator-one{
+  color: var(--primary);
+}
+/* separator end  */
+
+/* logo start  */
+.dot{
+  color: var(--primary);
+}
+.logo h1{
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+}
+.logo h1 span{
+  color: var(--primary);
+}
+/* logo end  */
+
+/* menus start  */
+nav li a{
+  color: var(--white);
+}
+nav ul li{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+/* menus end  */
+
+/* button start  */
+.btn{
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 5px;
+  transition: 0.5s;
+  border: 1px solid var(--primary);
+  padding: 8px 20px;
+}
+.btn:hover{
+  background: transparent;
+}
+/* button end */
+
