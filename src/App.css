@@ -8,7 +8,7 @@
   --primary-text: #fff;
   --primary:#F74575;
   --white:#fff;
-  --secondary-font:#BCB7B7;
+  --secondary-text:#BCB7B7;
   --primary-font:'Josefin Sans', sans-serif;
   --logo:'Borel', cursive;
 }
@@ -19,8 +19,18 @@
   max-width: 1140px!important;
   margin: auto!important;
 }
+.section{
+  min-height: 100vh;
+  padding: 50px 0;
+}
 .secondary{
   background: var(--bg-color-secondary);
+}
+.primary-text{
+  color: var(--primary);
+}
+.secondary-text{
+  color: var(--secondary-text);
 }
 /* basic setting end  */
 *{
@@ -42,6 +52,21 @@ body{
   color: var(--primary);
 }
 /* separator end  */
+
+/* indecator start  */
+.indecator{
+  position: relative;
+  padding: 2px;
+}
+.indecator::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 100%;
+  background: var(--primary);
+}
+/* indecator end  */
 
 /* logo start  */
 .dot{
@@ -66,6 +91,9 @@ nav ul li{
   gap: 10px;
   align-items: center;
 }
+nav ul li a.active{
+  color: var(--primary);
+}
 /* menus end  */
 
 /* button start  */
@@ -82,3 +110,42 @@ nav ul li{
 }
 /* button end */
 
+/* short service start  */
+.shortservice .item{
+  border: 1px solid var(--primary);
+  transition: all 0.5s;
+}
+.shortservice .item:hover{
+  background: transparent;
+}
+/* short service end  */
+
+/* team card start  */
+.teamcard{
+  border: 1px solid var(--primary);
+}
+.card-img{
+  border:1px solid var(--primary);
+}
+.card-designation{
+  border: 1px solid var(--primary);
+}
+/* team card end  */
+
+/* choose us section start  */
+.choose-item-img{
+  background: var(--primary);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.choose-item-img img{
+  object-fit: cover;
+}
+.choose-item{
+  border: 1px solid var(--primary);
+}
+/* choose us section end  */
